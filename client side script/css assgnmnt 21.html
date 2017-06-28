@@ -1,0 +1,154 @@
+
+<html>
+<head>
+  <title>styling from element</title>
+
+<!--<script src="js/jquery-3.2.1.js"></script>
+<script src="js/scriptfb.js"></script>-->
+<style>
+#body{
+background-image: linear-gradient(to top,#dfe3ee,white);
+width:400px;
+height: 110%;
+padding: 20px;
+/*border:1px red solid;*/
+margin-top:-48px;
+
+}
+#heading
+{
+font-family: arial;
+font-size: 40px;
+color: #333333;
+
+}
+.fb_login
+{
+  border: 1px solid #bdc7d8;
+  border-radius: 6px;
+  width: 98.8%;
+  height: 6%;
+  padding: 10px;
+  color: #999999;
+  font-size: 16px;
+  font-family: arial;
+}
+#fb_login
+{
+  border: 1px solid #bdc7d8;
+  border-radius: 6px;
+  width: 49%;
+  height: 6%;
+  padding: 10px;
+  font-size: 16px;
+  font-family: arial;
+  color: #999999;
+}
+#para
+{
+font-size: 20px;
+font-family: arial;
+}
+.box{
+  padding: 2px;
+  height: 30px;
+  border: 1px solid #bdc7d8;
+  border-radius: 8px;
+}
+
+#why{
+  margin-top:-30px;
+  margin-left:190px;
+  color: #365899;
+  font-family: tahoma;
+  font-size: 12px;
+}
+#info{
+  font-size: 11px;
+  font-family: arial;
+  color:#77777a;
+  margin-top: -8px;
+}
+#info a{
+  text-decoration: none;
+}
+.create_button{
+
+  width: 200px;
+  padding: 8px;
+  margin-top: -5px;
+  background-image: linear-gradient(to top, #578843,#5c9448,#5f9b4c,#63a450,#64a852);
+  border:2px solid #578943;
+  border-radius:6px;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+}
+#foot{
+  font-size: 12px;
+  font-family: tahoma;
+  font-weight: bold;
+  color: #365899;
+  margin-top: 35px;
+
+}
+#foot a{
+  text-decoration: none;
+
+}
+
+</style>
+
+</head>
+
+<body>
+<div id="body">
+  <h1 id="heading"><b>Create an account</b></h1>
+  <p id="para"> it's free and always will be</p>
+  <form name="fb_login" action="" method="get">
+    <input type="text" placeholder="First Name" id="fb_login">
+    <input type="text" placeholder="Last Name" id="fb_login"><br/><br />
+    <input type="text" placeholder="Mobile number or email address" class="fb_login" ><br/><br/>
+    <input type="text" placeholder="New password" class="fb_login">
+    <p id="para">Birthday</p>
+    <select class="box">
+      <option selected><b>Day</b></option>
+      <option value="01">01</option>
+      <option value="02">02</option>
+      <option value="03">03</option>
+      <option value="04">04</option>
+      <option value="05">05</option>
+      <option value="06">06</option>
+      <option value="07">07</option>
+    </select>
+    <select class="box">
+      <option selected><b>Month</b></option>
+      <option value="01">01</option>
+      <option value="02">02</option>
+      <option value="03">03</option>
+      <option value="04">04</option>
+      <option value="05">05</option>
+      <option value="06">06</option>
+      <option value="07">07</option>
+    </select>
+    <select class="box">
+      <option selected><b>Year</b></option>
+      <option value="01">1990</option>
+      <option value="02">1992</option>
+      <option value="03">1993</option>
+      <option value="04">1994</option>
+      <option value="05">1995</option>
+      <option value="06">1996</option>
+      <option value="07">1997</option>
+    </select>
+    <div id="why">Why do i need to provide my<br/> date of birth</div><br/>
+     <input type="radio" name="gender" value="male"><font size="4px" face="arial"> Female</font>
+
+       <input type="radio" name="gender" value="female"><font size="4px" face="arial">Male</font><br/><br />
+       <p id="info">By clicking Create an account, you agree to our <a href="#">Terms</a> and <br> confirm that you have read our <a href="#">Data Policy,</a> including our <br> <a href="#">cookie Use Policy.</a> You may recieve SMS message notifications <br> from Facebook and can opt out at any time.</p>
+        <br/><input type="button" class="create_button" value="Create an account">
+  </form>
+  <p id="foot"><a href="#">Create a Page</a> for a celebrity, band or business</p>
+</body>
+</html>
